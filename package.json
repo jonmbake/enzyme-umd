@@ -1,0 +1,27 @@
+{
+  "name": "enzyme-umd",
+  "version": "1.0.0",
+  "description": "A untility to build a UMD (Universal Module Definition) for Enzyme.",
+  "main": "index.js",
+  "repository": "https://github.com/jonmbake/enzyme-umd/",
+  "author": "Jon Bake",
+  "license": "MIT",
+  "scripts": {
+    "build": "browserify --standalone enzyme-react --out-dir -x react/addons -x react/lib/ReactContext -x react/lib/ExecutionEnvironment src/enzyme-react.js -o build/enzyme-react.js && uglifyjs build/enzyme-react.js -o build/enzyme-react.min.js",
+    "test": "karma start karma.conf.js"
+  },
+  "devDependencies": {
+    "browserify": "^14.5.0",
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-requirejs": "^1.1.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "requirejs": "^2.3.0",
+    "uglify-js": "^3.1.9"
+  }
+}
