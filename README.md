@@ -41,6 +41,14 @@ Run:
 npm test
 ```
 
+## To Run Clean, Build and Unit tests
+
+Run:
+
+```
+npm run all
+```
+
 ## Pitfalls
 
 - Avoid loading multiple versions of React. Use the version packaged with this module.
